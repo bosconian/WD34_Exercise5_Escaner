@@ -1,0 +1,164 @@
+h1{
+    text-align: center;
+}
+body{
+    font-family: keep calm Medium;
+    font-size: 20px;
+    background: rgb(214, 202, 202);
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(NVHeader.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 400px; 
+
+}
+#AboutArea{
+    color: rgb(137, 19, 19);
+    font-size: 30px;
+
+}
+.imagealign{
+    text-align: center;
+}
+.Definition{
+    margin: 0px 450px 0px 250px;
+}
+.gmap{
+    text-align: center;
+}
+.cities{
+    text-align: left;
+    margin-left: 250px;
+    padding: 0;
+    font-size: 20px;
+}
+h2{
+    text-align: left;
+    margin-left: 250px;
+    font-family: Keep Calm Medium;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.alignment{
+    text-align: left;
+    margin-left: 250px;
+}
+.table{
+    background: light gray;
+    max-width: 890px;
+    margin: auto;
+}
+.detailsalignment{
+    text-align: left;
+}
+.detailsalignment2{
+    text-align: center;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: right;
+    margin: 0;
+
+}
+nav .black ul{
+    background: #000;
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: skyblue;
+    font: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.nodecor{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    background: rgb(89, 99, 238);
+}
+#POI{
+    font-family: Keep Calm Medium;
+    color: blue;
+    font-size: 30px;
+    margin-left: 0px;
+    text-align: left;
+}
+#locationclr{
+    color: rgb(86, 0, 224);
+    font-size: 30px;
+}
+#facts{
+    color: red;
+    font-size: 30px;
+}
+#CandT{
+    color: rgba(136, 136, 10, 1);
+    font-size: 30px;
+}
+.spots{
+    text-align: left;
+    margin-left: 250px;
+    padding: 0;
+    font-size: 20px;
+}
+.spotsimages{
+    max-width: 1300px;
+    margin: auto;
+    overflow: auto;
+}
+.gallery{
+    padding-top: 50px;
+    text-align: center;
+    margin: 10px;
+    float:left;
+    width: 300px;
+    transition: 0.5s;
+}
+.gallery img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+.desciption{
+    padding: 15px;
+    text-align: center;
+    color: rgb(7, 84, 59);
+}
+.gallery:hover{
+    transform: scale(1.2);
+    z-index:2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.faqs{
+    padding: 0;
+    text-align: left;
+}
+.questions{
+    text-align: left;
+    margin-left: 250px;
+}
