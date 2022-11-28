@@ -1,0 +1,286 @@
+html,body{
+    margin:0;
+    background:url('bbq\ background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    font-family: Keep Calm Medium;
+}
+.logo{
+    background-repeat: no-repeat;
+    width: auto;
+}
+.menu-bar{
+    width: 100%;
+    background: #E75218;
+    text-align: center;
+    z-index: 1000;
+   position: fixed;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none; 
+    
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.active, .menu-bar ul li:hover{
+    background: #000000;
+    border-radius: 3px;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background:rgb(136, 40, 40) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color:goldenrod;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+
+}
+.overlay{
+    position: absolute;
+    background: rgba(231, 186, 24, 0.603);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.banner-content{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 500;
+    text-align: center;
+    text-decoration: none;
+}
+.banner-content h1{
+    font-weight: normal!important;
+    text-decoration: none;
+}
+button{
+    background: none;
+    border:none;
+    text-decoration: none;
+}
+.btn-transparent{
+    border: solid white 5px;
+    padding: 5px 10px;
+    font-family: Keep Calm Medium;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-transparent:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.aboutus{
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+.aboutus h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+.aboutus p{
+    color: rgb(255, 255, 255);color: rgb(255, 255, 255);
+}
+.menu{
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+.menu h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+.menu p{
+    color: rgb(255, 255, 255);
+}
+.menu-item-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-item{
+    width: 50%;
+    text-align: left;
+}
+.menu-item-desc{
+    padding: 20px;
+}
+.menu-item img{
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    border: solid white;
+    border-radius: 30%;
+}
+.menu-item:hover img{
+    transform: scale(1.5);
+    cursor: pointer;
+
+}
+.contact{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+.contact p{
+    color: rgb(255, 255, 255);
+    margin-bottom:0px;
+}
+.contact h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin-top: 0px;
+}
+.input-form{
+    background: none;
+    border:none;
+    border: 2px solid #fff;
+    width: 100%;
+    margin: 10px 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.input-textarea{
+    background: none;
+    border:none;
+    border: 2px solid #fff;
+    width: 1000px;
+    margin: 10px 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:10px;
+    height: 200px;
+    resize: none;
+    box-sizing: border-box;
+}
+.input-form:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    background: #E7BA18;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+.input-textarea:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    background: #E7BA18;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+.submit-btn{
+    background: none;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    font-family: Keep Calm Medium;
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+    width: 100%;
+    padding:10px;
+    margin:10px 0px;
+}
+.submit-btn:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    background: rgb(218, 32, 32);
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+.popup{
+    width: 400px;
+    background:#fff ;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    padding: 0 30px 30px;
+    margin: auto;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    bottom: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup p{
+    color: #000000;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size:38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+}
+.popup button{
+    width:100%;
+    padding: 10px 0 ;
+    background: #6fd649;
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.menu-item img{
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    border: solid white;
+    border-radius: 30%;
+}
+.footer{
+    padding:10px;
+    color: white;
+    background: rgb(0, 0, 0);
+    text-align: center;
+
+}
+

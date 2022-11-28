@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercise9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>WD34_Exercise9_Escaner</title>
+</head>
+<body>
+    <div  class="menu-bar">
+        <ul class="nav-links">
+            <li>
+                <a href="#home"><i class="fa fa-home"></i>Home</a>
+            </li>
+            <li>
+                <a href="#aboutus"><i class="fa fa-user" ></i>About</a>
+            </li>
+            <li>
+                <a href="#menu"><i class="fa fa-bars"></i>Menu</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#pbbq">Pork BBQ - 100php</a> </li>
+                        <li><a href="#isaw">Isaw - 50php</a> </li>
+                        <li><a href="#adidas">Adidas - 70php</a> </li>
+                        <li><a href="#betamax">Betamax - 70php</a> </li>
+                    </ul>
+                
+                </div>
+            </li>
+            <li>
+                <a href="#tocontact"><i class="fa fa-address-book-o"></i>Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div id="home" class="banner">
+            <div class="banner-content">
+                <img src="download-removebg-preview.png" width="500">
+                <hr>
+                <h1>Pinoy Grill House</h1>
+                <hr>
+                <button class="btn-transparent"><a href="#aboutus" style="text-decoration: none;color: white;"> DISCOVER MORE</a></button>
+            </div>
+        <div class="overlay"></div>
+        <video src="barbecue intro video HD.mp4" width="100%" autoplay loop ></video>
+    </div>
+
+    <div id="aboutus" class="aboutus">
+        <h1>WELCOME TO FILIPINO GRILL HOUSE</h1>
+        <p>Inihaw is a general term simply meaning "grilled" or "roasted" in Tagalog, from the verb ihaw ("to grill"). It is also known as sinugba (verb sugba, "to grill") in Cebuano, and inasal (verb asal, "to roast in dry heat, to skewer") in both Cebuano and Hiligaynon. It may also be referred to simply by the English name "barbecue" (usually shortened to "BBQ"), especially for inihaw served in skewers. Inihaw are usually made with pork, beef, or seafood. Cheap versions can also be made with offal.</p>
+        <img src="nag iihaw.jpg" alt="" width="100%">
+    </div>
+
+    <div class="menu-cover">
+        <div id="menu" class="menu">
+            <h1>MENU</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, sit. Molestiae iure officia, eligendi omnis quidem neque autem aliquam animi quisquam. Omnis recusandae eaque impedit dicta qui soluta necessitatibus sint!</p>
+            <div class="menu-item-container">
+                <div id="pbbq" class="menu-item">
+                    <img src="BBQ.gif" width="100%">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-desc">
+                        <h1>Pinoy Pork BBQ Php30</h1>
+                        <p>What is pork barbeque made from?
+                            Image result for pork barbeque definition
+                            It is composed of thinly sliced pork pieces that are marinated in a special mixture of seasonings and spices. In the Philippines, it is normally grilled over wood charcoal and dipped in a tall jar of spicy vinegar before eating.</p>
+                    </div>
+                </div>
+                <!-- -->
+                <div  class="menu-item">
+                    <div class="menu-item-desc">
+                        <h1>Isaw BBQ Php15</h1>
+                        <p>Isaw is a popular street food from the Philippines, made from barbecued pig or chicken intestines. It is a type of inihaw. The intestines are cleaned, turned inside out, and cleaned again, repeating the process several times; they are then either boiled, then grilled, or immediately grilled on sticks.</p>
+                    </div>
+                </div>
+                <div id="isaw" class="menu-item">
+                        <img src="isaw.jpg" width="100%">
+                </div>
+                <div id="adidas" class="menu-item">
+                    <img src="adidas.jpg" width="100%">
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-desc">
+                        <h1>Adidas Php15</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia amet iusto tempora quas nobis sint eius, unde voluptatem illum animi rerum nostrum ut consequuntur tempore! Facilis temporibus dolorum repudiandae neque!</p>
+                    </div>
+                </div>
+                <div  class="menu-item">
+                    <div class="menu-item-desc">
+                        <h1>Betamax BBQ Php15</h1>
+                        <p>Coagulated chicken blood that is boiled, cut in to cubes, skewered and grilled to be sold as a street food.</p>
+                    </div>
+                </div>
+                <div id="betamax" class="menu-item">
+                        <img src="betamax.jpg" width="100%" height="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tocontact" class="contact">
+        <h1>LET US HEAR FROM YOU</h1>
+        <form>
+            <input type="text" class="input-form" placeholder="Type Name Here..">
+            <input type="text" class="input-form" placeholder="Type Number Here..">
+            <input type="email" class="input-form" placeholder="Type Email Here..">
+            <br>
+            <textarea class="input-textarea"  placeholder="Type Comment Here.."></textarea>
+            <!--<input class="submit-btn" onclick="openPopup()" type="submit" value="SUBMIT COMMENT">-->
+            <button type="submit" class="submit-btn" onclick="openPopup()">SUBMIT COMMENT</button>
+            <div class="popup" id="popup">
+                <img src="tick.png">
+                <h2>Thank You</h2>
+                <p>Your details has been successfully submitted. Thanks</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        Copyright 2022 All rights reserved
+    </div>
+</body>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+      popup.classList.add(".open-popup");  
+    }
+    function closePopup(){
+      popup.classList.remove(".open-popup");  
+    }
+</script>
+</html>
